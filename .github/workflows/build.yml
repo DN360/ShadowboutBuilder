@@ -27,9 +27,12 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: ZIP
-        run: zip Build.zip *
-      - name: Upload build result
-        uses: actions/upload-artifact@v3
+        run: zip ShadowboutBuilder.zip *
+      - name: Upload binaries to release
+        uses: svenstaro/upload-release-action@v2
         with:
-          name: build-files
-          path: Build.zip
+            repo_token: ${{ secrets.GITHUB_TOKEN }}
+            file: ShadowboutBuilder.zip
+            asset_name: ShadowboutBuilder.zip
+            tag: ${{ github.ref }}
+            overwrite: true
