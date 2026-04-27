@@ -1,2 +1,2 @@
 @echo off
-powershell -executionpolicy RemoteSigned -File "%~dp0\Utils\%~n0.ps1"
+powershell -executionpolicy RemoteSigned -File "%~dp0Utils\%~n0.ps1"
