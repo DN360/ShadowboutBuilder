@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?><room hasExportLock="true" isTimerVisible="false" timerState="stopped" timerRemainingSeconds="600" timerInitialSeconds="600" defaultDiceBotId="DiceBot">
+  <game-table identifier="06f7178b-80cb-4574-b135-04bd60dc30ad" name="シャドウバウト" width="16.674" height="23.576" gridSize="50" imageIdentifier="__REPLACE__playmat__" backgroundImageIdentifier="null" backgroundFilterType="" backgroundImageScale="100" backgroundImagePositionX="50" backgroundImagePositionY="50" selected="true" gridType="0" gridColor="#000000e6" isCardPreviewFixedTopRight="false" useInitialCameraPosition="false" initialCameraPositionX="213" initialCameraPositionY="-16.1" initialCameraPositionZ="121.3" initialCameraRotateX="0" initialCameraRotateZ="0" isGridSnapEnabled="false" hideCardRotateMarkers="false" hideTerrainRotateMarkers="false" isAll2DViewEnabled="false" hideDiceRotateMarkers="false" hideOverviewWhenBack="false" showOwnerFrontFullSize="false" enableCardFlipAnimation="false" isCardStanding="false" showBackInStackList="false" assetHiddenImageIdsCsv="" assetShowHidden="false" showObjNoAndCoords="false" autoPlayBgm="false" autoBgmSelectedName="" autoBgmNameListCsv="" defaultDiceBotId="DiceBot">
+    <card-stack identifier="a65d13f7-96fd-49cd-a104-ab3ff4276ea5" rotate="0" zindex="0" owner="" isShowTotal="true" isPositionFixed="true" returnFaceMode="current" isInstantDrawAndGrabEnabled="true" drawVisibility="auto" isHeightOffsetByCount="false" targetTerrainNumber="0" cardStackNumber="3" nameFontSize="15" countPrefix="" countSuffix="枚" isSharedAcrossTables="false" location.name="table" location.x="691.5474963246004" location.y="647.6812946846135" posZ="0">
+      <data identifier="card-stack_a65d13f7-96fd-49cd-a104-ab3ff4276ea5" name="card-stack">
+        <data identifier="image_a65d13f7-96fd-49cd-a104-ab3ff4276ea5" name="image">
+          <data identifier="imageIdentifier_a65d13f7-96fd-49cd-a104-ab3ff4276ea5" type="image" name="imageIdentifier"/>
+        </data>
+        <data identifier="common_a65d13f7-96fd-49cd-a104-ab3ff4276ea5" name="common">
+          <data identifier="name_a65d13f7-96fd-49cd-a104-ab3ff4276ea5" name="name">カード山札</data>
+        </data>
+        <data identifier="detail_a65d13f7-96fd-49cd-a104-ab3ff4276ea5" name="detail"/>
+      </data>
+      <node identifier="cardRoot_a65d13f7-96fd-49cd-a104-ab3ff4276ea5" name="cardRoot">
+        __REPLACE_A_card_xml__
+      </node>
+    </card-stack>
+    <card-stack identifier="d19e5723-a1cb-4b2f-8ec3-2248cad4010a" rotate="-180" zindex="1" owner="" isShowTotal="true" isPositionFixed="true" returnFaceMode="current" isInstantDrawAndGrabEnabled="true" drawVisibility="auto" isHeightOffsetByCount="false" targetTerrainNumber="0" cardStackNumber="4" nameFontSize="15" countPrefix="" countSuffix="枚" isSharedAcrossTables="false" location.name="table" location.x="41.9753463875234" location.y="393.27116638475803" posZ="0">
+      <data identifier="card-stack_d19e5723-a1cb-4b2f-8ec3-2248cad4010a" name="card-stack">
+        <data identifier="image_d19e5723-a1cb-4b2f-8ec3-2248cad4010a" name="image">
+          <data identifier="imageIdentifier_d19e5723-a1cb-4b2f-8ec3-2248cad4010a" type="image" name="imageIdentifier"/>
+        </data>
+        <data identifier="common_d19e5723-a1cb-4b2f-8ec3-2248cad4010a" name="common">
+          <data identifier="name_d19e5723-a1cb-4b2f-8ec3-2248cad4010a" name="name">カード山札</data>
+        </data>
+        <data identifier="detail_d19e5723-a1cb-4b2f-8ec3-2248cad4010a" name="detail"/>
+      </data>
+      <node identifier="cardRoot_d19e5723-a1cb-4b2f-8ec3-2248cad4010a" name="cardRoot">
+        __REPLACE_B_card_xml__
+      </node>
+    </card-stack>
+  </game-table>
+  
+  
+<audio-tags/><cut-in itemsJson="[]" selectedId=""/></room>

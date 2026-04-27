@@ -1,0 +1,32 @@
+<card identifier="CARDDECK_card_CARDINDEX" state="1" rotate="0" owner="" zindex="0" isLocked="false"
+    previewBackFace="false" hitArea1HeightPercent="100" hitArea1WidthPercent="100"
+    hitArea1StartXPercent="0" hitArea1StartYPercent="0" hitArea2HeightPercent="0"
+    hitArea2WidthPercent="0" hitArea2StartXPercent="0" hitArea2StartYPercent="0"
+    hitArea3HeightPercent="0" hitArea3WidthPercent="0" hitArea3StartXPercent="0"
+    hitArea3StartYPercent="0" enableHitAreaTuning="false" hideHitAreaColor="false"
+    angleSwapEnabled="false" angleSwapImageIdentifier="" angleSwapAnglesCsv=""
+    frontMemoEnabled="false" frontMemoFontSize="5" frontMemoAspectW="2" frontMemoAspectH="3"
+    frontMemoBorderRadius="8" frontMemoCentered="false" frontMemoVCentered="false"
+    frontMemoShowImage="false" frontMemoAlwaysShow="false" frontMemoLetterSpacing="0"
+    hideOwnerNameOnSelfView="false" isSharedAcrossTables="false" location.name="table"
+    location.x="691.5474963246004" location.y="647.6812946846135" posZ="0">
+    <data identifier="card_CARDDECK_card_CARDINDEX" name="card">
+        <data identifier="image_CARDDECK_card_CARDINDEX" name="image">
+            <data identifier="imageIdentifier_CARDDECK_card_CARDINDEX" type="image" name="imageIdentifier" />
+            <data identifier="front_CARDDECK_card_CARDINDEX" type="image" name="front">__REPLACE__card_CARDINDEX__</data>
+            <data identifier="back_CARDDECK_card_CARDINDEX" type="image" name="back">__REPLACE__card_back__</data>
+        </data>
+        <data identifier="common_CARDDECK_card_CARDINDEX" name="common" />
+        <data identifier="detail_CARDDECK_card_CARDINDEX" name="detail">
+            <data identifier="info_CARDDECK_card_CARDINDEX" name="カード情報">
+                <data identifier="idol_CARDDECK_card_CARDINDEX" name="名前">__REPLACE__card_CARDINDEX_idol__</data>
+                <data identifier="hand_CARDDECK_card_CARDINDEX" name="手">__REPLACE__card_CARDINDEX_hand__</data>
+                <data identifier="point_CARDDECK_card_CARDINDEX" name="ポイント">__REPLACE__card_CARDINDEX_point__</data>
+                <data identifier="item_CARDDECK_card_CARDINDEX" name="戦具">__REPLACE__card_CARDINDEX_item__</data>
+                <data identifier="profile_CARDDECK_card_CARDINDEX" name="プロフィール">__REPLACE__card_CARDINDEX_profile__</data>
+                <data identifier="effect_CARDDECK_card_CARDINDEX" name="効果">__REPLACE__card_CARDINDEX_effect__</data>
+                <data identifier="school_CARDDECK_card_CARDINDEX" name="所属">__REPLACE__card_CARDINDEX_school__</data>
+            </data>
+        </data>
+    </data>
+</card>
