@@ -1,7 +1,17 @@
 # 前に作っていたら削除しておく
 Remove-Item -ErrorAction Ignore -Force .\Shadowbout.zip
+Remove-Item -ErrorAction Ignore -Force -Recurse Shadowbout
 
 New-Item -ErrorAction Ignore -ItemType Directory Shadowbout
+
+# まず先んじてPlaceholderからカードや背景を全部コピーしておく
+Copy-Item -Path .\Placeholder\*.webp -Destination .\Shadowbout
+
+# 切り出したカード画像などをコピー
+Copy-Item -Path .\Card\*.webp -Destination .\Shadowbout
+Copy-Item -Path .\Background\playmat.webp -Destination .\Shadowbout
+Copy-Item -Path .\XML\roomExportFlag.xml -Destination .\Shadowbout
+Copy-Item -Path .\XML\summary.xml -Destination .\Shadowbout
 
 $data_xml = Get-Content -Path .\XML\data.xml -Encoding UTF8
 
@@ -32,7 +42,7 @@ $data_csv = Import-Csv -Path .\CSV\card.csv -Header "index", "idol", "hand", "po
 # カードの差し替え
 for ($i = 1; $i -lt 53; $i++) {
     $hash_name = "card_${i}"
-    $hash_set = Get-FileHash -Algorithm SHA256 -Path "Card/${hash_name}.webp"
+    $hash_set = Get-FileHash -Algorithm SHA256 -Path "Shadowbout/${hash_name}.webp"
     $hash = $hash_set.Hash.ToLower()
     $data_xml = $data_xml.Replace("__REPLACE__${hash_name}__", $hash)
 
@@ -56,24 +66,26 @@ for ($i = 1; $i -lt 53; $i++) {
 
 # カードの裏面差し替え
 $hash_name = "card_back"
-$hash_set = Get-FileHash -Algorithm SHA256 -Path "Card/${hash_name}.webp"
+$hash_set = Get-FileHash -Algorithm SHA256 -Path "Shadowbout/${hash_name}.webp"
 $hash = $hash_set.Hash.ToLower()
 $data_xml = $data_xml.Replace("__REPLACE__${hash_name}__", $hash)
 
 # プレイマットの差し替え
 $hash_name = "playmat"
-$hash_set = Get-FileHash -Algorithm SHA256 -Path "Background/${hash_name}.webp"
+$hash_set = Get-FileHash -Algorithm SHA256 -Path "Shadowbout/${hash_name}.webp"
+$hash = $hash_set.Hash.ToLower()
+$data_xml = $data_xml.Replace("__REPLACE__${hash_name}__", $hash)
+
+# シンプルテクスチャの差し替え
+$hash_name = "simple"
+$hash_set = Get-FileHash -Algorithm SHA256 -Path "Shadowbout/${hash_name}.webp"
 $hash = $hash_set.Hash.ToLower()
 $data_xml = $data_xml.Replace("__REPLACE__${hash_name}__", $hash)
 
 # ハッシュを差し替えたものを保存
 $data_xml | Out-File ".\Shadowbout\data.xml"
 
-# カード画像などをコピー
-Copy-Item -Path .\Card\*.webp -Destination .\Shadowbout
-Copy-Item -Path .\Background\playmat.webp -Destination .\Shadowbout
-Copy-Item -Path .\XML\roomExportFlag.xml -Destination .\Shadowbout
-Copy-Item -Path .\XML\summary.xml -Destination .\Shadowbout
-New-Item -ErrorAction Ignore -Path .\Shadowbout\ExportLock
+# ExportLock
+#New-Item -ErrorAction Ignore -Path .\Shadowbout\ExportLock
 
 Compress-Archive -Path .\Shadowbout\* -DestinationPath .\Shadowbout.zip

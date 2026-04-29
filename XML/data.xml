@@ -1,34 +1,443 @@
-<?xml version="1.0" encoding="UTF-8"?><room hasExportLock="true" isTimerVisible="false" timerState="stopped" timerRemainingSeconds="600" timerInitialSeconds="600" defaultDiceBotId="DiceBot">
-  <game-table identifier="06f7178b-80cb-4574-b135-04bd60dc30ad" name="シャドウバウト" width="16.674" height="23.576" gridSize="50" imageIdentifier="__REPLACE__playmat__" backgroundImageIdentifier="null" backgroundFilterType="" backgroundImageScale="100" backgroundImagePositionX="50" backgroundImagePositionY="50" selected="true" gridType="0" gridColor="#000000e6" isCardPreviewFixedTopRight="false" useInitialCameraPosition="false" initialCameraPositionX="213" initialCameraPositionY="-16.1" initialCameraPositionZ="121.3" initialCameraRotateX="0" initialCameraRotateZ="0" isGridSnapEnabled="false" hideCardRotateMarkers="false" hideTerrainRotateMarkers="false" isAll2DViewEnabled="false" hideDiceRotateMarkers="false" hideOverviewWhenBack="false" showOwnerFrontFullSize="false" enableCardFlipAnimation="false" isCardStanding="false" showBackInStackList="false" assetHiddenImageIdsCsv="" assetShowHidden="false" showObjNoAndCoords="false" autoPlayBgm="false" autoBgmSelectedName="" autoBgmNameListCsv="" defaultDiceBotId="DiceBot">
-    <card-stack identifier="a65d13f7-96fd-49cd-a104-ab3ff4276ea5" rotate="0" zindex="0" owner="" isShowTotal="true" isPositionFixed="true" returnFaceMode="current" isInstantDrawAndGrabEnabled="true" drawVisibility="auto" isHeightOffsetByCount="false" targetTerrainNumber="0" cardStackNumber="3" nameFontSize="15" countPrefix="" countSuffix="枚" isSharedAcrossTables="false" location.name="table" location.x="691.5474963246004" location.y="647.6812946846135" posZ="0">
-      <data identifier="card-stack_a65d13f7-96fd-49cd-a104-ab3ff4276ea5" name="card-stack">
-        <data identifier="image_a65d13f7-96fd-49cd-a104-ab3ff4276ea5" name="image">
-          <data identifier="imageIdentifier_a65d13f7-96fd-49cd-a104-ab3ff4276ea5" type="image" name="imageIdentifier"/>
+<?xml version="1.0" encoding="UTF-8"?>
+<room hasExportLock="true" isTimerVisible="false" timerState="stopped" timerRemainingSeconds="600"
+  timerInitialSeconds="600" defaultDiceBotId="DiceBot">
+  <game-table identifier="06f7178b-80cb-4574-b135-04bd60dc30ad" name="シャドウバウト" width="16.674"
+    height="23.576" gridSize="50" imageIdentifier="__REPLACE__playmat__"
+    backgroundImageIdentifier="null" backgroundFilterType="" backgroundImageScale="100"
+    backgroundImagePositionX="50" backgroundImagePositionY="50" selected="true" gridType="0"
+    gridColor="#000000e6" isCardPreviewFixedTopRight="false" useInitialCameraPosition="false"
+    initialCameraPositionX="213" initialCameraPositionY="-16.1" initialCameraPositionZ="121.3"
+    initialCameraRotateX="0" initialCameraRotateZ="0" isGridSnapEnabled="false"
+    hideCardRotateMarkers="false" hideTerrainRotateMarkers="false" isAll2DViewEnabled="false"
+    hideDiceRotateMarkers="false" hideOverviewWhenBack="false" showOwnerFrontFullSize="false"
+    enableCardFlipAnimation="false" isCardStanding="false" showBackInStackList="false"
+    assetHiddenImageIdsCsv="" assetShowHidden="false" showObjNoAndCoords="false" autoPlayBgm="false"
+    autoBgmSelectedName="" autoBgmNameListCsv="" defaultDiceBotId="DiceBot">
+
+    <!-- A側 -->
+    <card-stack identifier="cardStackA" rotate="0" zindex="0" owner=""
+      isShowTotal="true" isPositionFixed="true" returnFaceMode="current"
+      isInstantDrawAndGrabEnabled="true" drawVisibility="auto" isHeightOffsetByCount="true"
+      targetTerrainNumber="0" cardStackNumber="100" nameFontSize="15" countPrefix="" countSuffix="枚"
+      isSharedAcrossTables="false" location.name="table" location.x="691.3"
+      location.y="646.5575269" posZ="0">
+      <data identifier="card-stack_cardStackA" name="card-stack">
+        <data identifier="image_cardStackA" name="image">
+          <data identifier="imageIdentifier_cardStackA" type="image"
+            name="imageIdentifier" />
         </data>
-        <data identifier="common_a65d13f7-96fd-49cd-a104-ab3ff4276ea5" name="common">
-          <data identifier="name_a65d13f7-96fd-49cd-a104-ab3ff4276ea5" name="name">カード山札</data>
+        <data identifier="common_cardStackA" name="common">
+          <data identifier="name_cardStackA" name="name">カード山札A</data>
         </data>
-        <data identifier="detail_a65d13f7-96fd-49cd-a104-ab3ff4276ea5" name="detail"/>
+        <data identifier="detail_cardStackA" name="detail" />
       </data>
-      <node identifier="cardRoot_a65d13f7-96fd-49cd-a104-ab3ff4276ea5" name="cardRoot">
+      <node identifier="cardRoot_cardStackA" name="cardRoot">
         __REPLACE_A_card_xml__
       </node>
     </card-stack>
-    <card-stack identifier="d19e5723-a1cb-4b2f-8ec3-2248cad4010a" rotate="-180" zindex="1" owner="" isShowTotal="true" isPositionFixed="true" returnFaceMode="current" isInstantDrawAndGrabEnabled="true" drawVisibility="auto" isHeightOffsetByCount="false" targetTerrainNumber="0" cardStackNumber="4" nameFontSize="15" countPrefix="" countSuffix="枚" isSharedAcrossTables="false" location.name="table" location.x="41.9753463875234" location.y="393.27116638475803" posZ="0">
-      <data identifier="card-stack_d19e5723-a1cb-4b2f-8ec3-2248cad4010a" name="card-stack">
-        <data identifier="image_d19e5723-a1cb-4b2f-8ec3-2248cad4010a" name="image">
-          <data identifier="imageIdentifier_d19e5723-a1cb-4b2f-8ec3-2248cad4010a" type="image" name="imageIdentifier"/>
+    <card-stack identifier="notUsingCardStackA" rotate="0" zindex="0" owner=""
+      isShowTotal="true" isPositionFixed="true" returnFaceMode="faceDown"
+      isInstantDrawAndGrabEnabled="true" drawVisibility="auto" isHeightOffsetByCount="true"
+      targetTerrainNumber="0" cardStackNumber="101" nameFontSize="15" countPrefix="" countSuffix="枚"
+      isSharedAcrossTables="false" location.name="table" location.x="2383.7"
+      location.y="589.4" posZ="0">
+      <data identifier="card-stack_notUsingCardStackA" name="card-stack">
+        <data identifier="image_notUsingCardStackA" name="image">
+          <data identifier="imageIdentifier_notUsingCardStackA" type="image"
+            name="imageIdentifier" />
         </data>
-        <data identifier="common_d19e5723-a1cb-4b2f-8ec3-2248cad4010a" name="common">
-          <data identifier="name_d19e5723-a1cb-4b2f-8ec3-2248cad4010a" name="name">カード山札</data>
+        <data identifier="common_notUsingCardStackA" name="common">
+          <data identifier="name_notUsingCardStackA" name="name">使わないカード山札A</data>
         </data>
-        <data identifier="detail_d19e5723-a1cb-4b2f-8ec3-2248cad4010a" name="detail"/>
+        <data identifier="detail_notUsingCardStackA" name="detail" />
       </data>
-      <node identifier="cardRoot_d19e5723-a1cb-4b2f-8ec3-2248cad4010a" name="cardRoot">
+      <node identifier="cardRoot_notUsingCardStackA" name="cardRoot" />
+    </card-stack>
+    <terrain identifier="handCardAreaA" isLocked="true" mode="3" rotate="0" terrainNumber="120"
+      isCardAreaEnabled="true" cardAreaFunction="handArea" cardAreaTargetStackNumber="100"
+      handAreaCardState="ownerOnly" handAreaCardInterval="25" handAreaRotateAngle="0"
+      cardAspectRatio="1.5" cardArrangeOffsetX="0" cardArrangeOffsetY="0.427899016"
+      isHandAreaClickArrangeEnabled="true"
+      isHandAreaFitToTerrainEnabled="false" handAreaFitMargin="0"
+      showMemo="true" memoBody="手札エリア(A)" memoWidthPx="280"
+      memoHeightPx="140" memoBodyBgMode="color" memoBodyBgColor="#000000aa"
+      memoBodyBgImageIdentifier="" memoRotateFlat="false" memoAlwaysVisible="true"
+      memoTextAlign="center" memoBodyBgOpacity="0.5" memoOffsetXpx="0" memoOffsetYpx="-80"
+      memoTextColor="#ffffff" memoTextShadowColor="rgba(0,0,0,0.35)" location.name="table"
+      location.x="0" location.y="1178.8" posZ="0">
+      <data identifier="terrain_handCardAreaA" name="terrain">
+        <data identifier="image_handCardAreaA" name="image">
+          <data identifier="imageIdentifier_handCardAreaA" type="image" name="imageIdentifier"/>
+          <data identifier="wall_handCardAreaA" type="image" name="wall">__REPLACE__simple__</data>
+          <data identifier="floor_handCardAreaA" type="image" name="floor">__REPLACE__simple__</data>
+        </data>
+        <data identifier="common_handCardAreaA" name="common">
+          <data identifier="name_handCardAreaA" name="name">手札エリアA</data>
+          <data identifier="width_handCardAreaA" name="width">16.674</data>
+          <data identifier="height_handCardAreaA" name="height">0.1</data>
+          <data identifier="depth_handCardAreaA" name="depth">4</data>
+        </data>
+      </data>
+    </terrain>
+    <terrain identifier="createDeckModeButtonA" isLocked="true" mode="3" rotate="0"
+      devMenuEnabled="true" devMenuOption="1" terrainNumber="110"
+      layoutStackNumber="100" ignoreTransparencyWhenUnlocked="true"
+      layoutStartX="883.7" layoutStartY="740.4" layoutColumnCount="13" layoutColumnInterval="125"
+      layoutRowCount="4"
+      layoutRowInterval="150" layoutPattern="grid"
+      layoutCardAngle="0" isShuffleOnSetup="false" layoutCardFace="ownerOnly"
+      showMemo="true" memoBody="&#10;&#10;デッキ制作" memoWidthPx="105" memoHeightPx="90"
+      memoBodyBgMode="color" memoBodyBgColor="#001275" memoBodyBgImageIdentifier=""
+      memoRotateFlat="true" memoAlwaysVisible="true" memoTextAlign="center" memoBodyBgOpacity="1"
+      memoOffsetXpx="0" memoOffsetYpx="0" memoTextColor="#ffffff" memoTextShadowColor="#000000"
+      location.name="table" location.x="883.7" location.y="639.4" posZ="0">
+      <data identifier="terrain_createDeckModeButtonA" name="terrain">
+        <data identifier="common_createDeckModeButtonA" name="common">
+          <data identifier="name_createDeckModeButtonA" name="name">デッキ制作モード</data>
+          <data identifier="width_createDeckModeButtonA" name="width">2</data>
+          <data identifier="height_createDeckModeButtonA" name="height">0</data>
+          <data identifier="depth_createDeckModeButtonA" name="depth">2</data>
+        </data>
+      </data>
+    </terrain>
+    <terrain identifier="buildDeckButtonA" isLocked="true" mode="3" rotate="0"
+      devMenuEnabled="true" devMenuOption="13" terrainNumber="111"
+      moveCardsSourceTerrainNumber="122" moveCardsDestinationStackNumber="100"
+      moveCardsReturnState="faceDown" shuffleAfterMoveToStack="true"
+      showMemo="true" memoBody="&#10;&#10;デッキを組む" memoWidthPx="105" memoHeightPx="90"
+      memoBodyBgMode="color" memoBodyBgColor="#001275" memoBodyBgImageIdentifier=""
+      memoRotateFlat="true" memoAlwaysVisible="true" memoTextAlign="center" memoBodyBgOpacity="1"
+      memoOffsetXpx="0" memoOffsetYpx="0" memoTextColor="#ffffff" memoTextShadowColor="#000000"
+      location.name="table" location.x="983.7" location.y="639.4" posZ="0">
+      <data identifier="terrain_buildDeckButtonA" name="terrain">
+        <data identifier="common_buildDeckButtonA" name="common">
+          <data identifier="name_buildDeckButtonA" name="name">デッキを組む</data>
+          <data identifier="width_buildDeckButtonA" name="width">2</data>
+          <data identifier="height_buildDeckButtonA" name="height">0</data>
+          <data identifier="depth_buildDeckButtonA" name="depth">2</data>
+        </data>
+      </data>
+    </terrain>
+    <terrain identifier="stackNotUsingCardsButtonA" isLocked="true" mode="3" rotate="0"
+      devMenuEnabled="true" devMenuOption="13" terrainNumber="111"
+      moveCardsSourceTerrainNumber="121" moveCardsDestinationStackNumber="101"
+      moveCardsReturnState="faceDown" shuffleAfterMoveToStack="false"
+      showMemo="true" memoBody="&#10;使わない&#10;カードを&#10;まとめる" memoWidthPx="105" memoHeightPx="90"
+      memoBodyBgMode="color" memoBodyBgColor="#001275" memoBodyBgImageIdentifier=""
+      memoRotateFlat="true" memoAlwaysVisible="true" memoTextAlign="center" memoBodyBgOpacity="1"
+      memoOffsetXpx="0" memoOffsetYpx="0" memoTextColor="#ffffff" memoTextShadowColor="#000000"
+      location.name="table" location.x="1083.7" location.y="639.4" posZ="0">
+      <data identifier="terrain_stackNotUsingCardsButtonA" name="terrain">
+        <data identifier="common_stackNotUsingCardsButtonA" name="common">
+          <data identifier="name_stackNotUsingCardsButtonA" name="name">使わないカードをまとめる</data>
+          <data identifier="width_stackNotUsingCardsButtonA" name="width">2</data>
+          <data identifier="height_stackNotUsingCardsButtonA" name="height">0</data>
+          <data identifier="depth_stackNotUsingCardsButtonA" name="depth">2</data>
+        </data>
+      </data>
+    </terrain>
+    <terrain identifier="stackedNotUsingCardsBackButtonA" isLocked="true" mode="3" rotate="0"
+      devMenuEnabled="true" devMenuOption="2" terrainNumber="111"
+      sourceStackNumber="101" destinationStackNumber="100"
+      confirmDialogMessage="不要なカードを山札へ戻します。よろしいですか？" enableTransferCount="false" transferCount="10"
+      moveToBottomOnTransfer="false" isShuffleAfterTransfer="false" confirmOnCardMove="true"
+      showMemo="true" memoBody="&#10;不要な&#10;カードを&#10;山札へ" memoWidthPx="105" memoHeightPx="90"
+      memoBodyBgMode="color" memoBodyBgColor="#001275" memoBodyBgImageIdentifier=""
+      memoRotateFlat="true" memoAlwaysVisible="true" memoTextAlign="center" memoBodyBgOpacity="1"
+      memoOffsetXpx="0" memoOffsetYpx="0" memoTextColor="#ffffff" memoTextShadowColor="#000000"
+      location.name="table" location.x="1183.7" location.y="639.4" posZ="0">
+      <data identifier="terrain_stackedNotUsingCardsBackButtonA" name="terrain">
+        <data identifier="common_stackedNotUsingCardsBackButtonA" name="common">
+          <data identifier="name_stackedNotUsingCardsBackButtonA" name="name">使わないカードを山札へ</data>
+          <data identifier="width_stackedNotUsingCardsBackButtonA" name="width">2</data>
+          <data identifier="height_stackedNotUsingCardsBackButtonA" name="height">0</data>
+          <data identifier="depth_stackedNotUsingCardsBackButtonA" name="depth">2</data>
+        </data>
+      </data>
+    </terrain>
+    <terrain identifier="notUsingCardAreaA" isLocked="true" mode="3" terrainNumber="121"
+      location.name="table" location.x="858.7" location.y="740.4"
+      z-index="0" posZ="-1"
+      showMemo="true" memoBody="ゲームには使わないカードをここに置いてください" memoWidthPx="380"
+      memoHeightPx="140" memoBodyBgMode="color" memoBodyBgColor="#000000aa"
+      memoBodyBgImageIdentifier="" memoRotateFlat="false" memoAlwaysVisible="true"
+      memoTextAlign="center" memoBodyBgOpacity="0.5" memoOffsetXpx="0" memoOffsetYpx="-295"
+      memoTextColor="#ffffff" memoTextShadowColor="rgba(0,0,0,0.35)"
+    >
+      <data identifier="terrain_notUsingCardAreaA" name="terrain">
+        <data identifier="image_notUsingCardAreaA" name="image">
+          <data identifier="imageIdentifier_notUsingCardAreaA" type="image" name="imageIdentifier"/>
+          <data identifier="wall_notUsingCardAreaA" type="image" name="wall">__REPLACE__simple__</data>
+          <data identifier="floor_notUsingCardAreaA" type="image" name="floor">__REPLACE__simple__</data>
+        </data>
+        <data identifier="common_notUsingCardAreaA" name="common">
+          <data identifier="name_notUsingCardAreaA" name="name">ゲームに使わないカード</data>
+          <data identifier="width_notUsingCardAreaA" name="width">33</data>
+          <data identifier="height_notUsingCardAreaA" name="height">0</data>
+          <data identifier="depth_notUsingCardAreaA" name="depth">12</data>
+        </data>
+      </data>
+    </terrain>
+    <terrain identifier="usingCardAreaA" isLocked="true" mode="3" terrainNumber="122"
+      location.name="table" location.x="858.7" location.y="1340.4"
+      z-index="0" posZ="-1"
+      showMemo="true" memoBody="デッキとして組むカードをここに置いてください" memoWidthPx="380"
+      memoHeightPx="140" memoBodyBgMode="color" memoBodyBgColor="#000000aa"
+      memoBodyBgImageIdentifier="" memoRotateFlat="false" memoAlwaysVisible="true"
+      memoTextAlign="center" memoBodyBgOpacity="0.5" memoOffsetXpx="0" memoOffsetYpx="-70"
+      memoTextColor="#ffffff" memoTextShadowColor="rgba(0,0,0,0.35)"
+    >
+      <data identifier="terrain_usingCardAreaA" name="terrain">
+        <data identifier="image_usingCardAreaA" name="image">
+          <data identifier="imageIdentifier_usingCardAreaA" type="image" name="imageIdentifier"/>
+          <data identifier="wall_usingCardAreaA" type="image" name="wall">__REPLACE__simple__</data>
+          <data identifier="floor_usingCardAreaA" type="image" name="floor">__REPLACE__simple__</data>
+        </data>
+        <data identifier="common_usingCardAreaA" name="common">
+          <data identifier="name_usingCardAreaA" name="name">使うカード</data>
+          <data identifier="width_usingCardAreaA" name="width">33</data>
+          <data identifier="height_usingCardAreaA" name="height">0</data>
+          <data identifier="depth_usingCardAreaA" name="depth">3</data>
+        </data>
+      </data>
+    </terrain>
+    <text-note identifier="4cf8c188-424c-4e63-9786-72c58cd09c9b" rotate="0" zindex="1" password=""
+      location.name="table" location.x="1423.1" location.y="0" posZ="0">
+      <data identifier="fc005bcd-54c6-414a-88a3-a93cd27e19a7" name="text-note">
+        <data identifier="ac523055-3e94-4f96-b04b-8406738ef8ee" name="image">
+          <data identifier="7a376558-af33-4823-bf6a-60b2247af60a" type="image"
+            name="imageIdentifier" />
+        </data>
+        <data identifier="393307a0-9f55-4a3d-93ae-4e48a90b8882" name="common">
+          <data identifier="dae3979f-b7d9-4c4d-9966-da709a2edb3a" name="width">23.576</data>
+          <data identifier="9c8a4960-35e5-435d-b98c-928d582da1e8" name="height">10</data>
+          <data identifier="74d8f0cd-d84f-4070-b53b-27a28445a261" name="fontsize">25</data>
+          <data identifier="af63b163-102e-4d2f-ad58-9e698c70c52d" name="title">遊び方</data>
+          <data identifier="926940d7-a782-4616-9cd8-633746d4e29d" type="note"
+            currentValue="テキストを入力してください" name="text">・デッキ制作モードボタンを押すと、現在の山札から平面上にカードが展開されます。
+・展開されたカードから、デッキに使いたいカードを下のエリアに移動してください。 ・移動後、デッキを組むボタンを押すことで山札が作成されます。
+・また、展開されたプレイに不要なカードは使わないカードをまとめるボタンでまとめることができます。
+・プレイ終了後、最初の状態に戻す場合は山札に使ったカードを戻し、不要なカードを山札へボタンを押すことで52枚のカードが山札に揃います。</data>
+        </data>
+        <data identifier="0bc19799-2be6-4314-9fdf-dcd7ebf15b16" name="detail" />
+      </data>
+    </text-note>
+
+    <!-- B側 -->
+    <card-stack identifier="cardStackB" rotate="-180" zindex="1" owner=""
+      isShowTotal="true" isPositionFixed="true" returnFaceMode="current"
+      isInstantDrawAndGrabEnabled="true" drawVisibility="auto" isHeightOffsetByCount="true"
+      targetTerrainNumber="0" cardStackNumber="200" nameFontSize="15" countPrefix="" countSuffix="枚"
+      isSharedAcrossTables="false" location.name="table" location.x="42.4"
+      location.y="392.4575269" posZ="0">
+      <data identifier="card-stack_cardStackB" name="card-stack">
+        <data identifier="image_cardStackB" name="image">
+          <data identifier="imageIdentifier_cardStackB" type="image"
+            name="imageIdentifier" />
+        </data>
+        <data identifier="common_cardStackB" name="common">
+          <data identifier="name_cardStackB" name="name">カード山札B</data>
+        </data>
+        <data identifier="detail_cardStackB" name="detail" />
+      </data>
+      <node identifier="cardRoot_cardStackB" name="cardRoot">
         __REPLACE_B_card_xml__
       </node>
     </card-stack>
+    <card-stack identifier="notUsingCardStackB" zindex="0" owner=""
+      isShowTotal="true" isPositionFixed="true" returnFaceMode="faceDown"
+      isInstantDrawAndGrabEnabled="true" drawVisibility="auto" isHeightOffsetByCount="true"
+      targetTerrainNumber="0" cardStackNumber="201" nameFontSize="15" countPrefix="" countSuffix="枚"
+      isSharedAcrossTables="false" location.name="table"
+      location.x="-1675" location.y="439.4" rotate="180">
+      <data identifier="card-stack_notUsingCardStackB" name="card-stack">
+        <data identifier="image_notUsingCardStackB" name="image">
+          <data identifier="imageIdentifier_notUsingCardStackB" type="image"
+            name="imageIdentifier" />
+        </data>
+        <data identifier="common_notUsingCardStackB" name="common">
+          <data identifier="name_notUsingCardStackB" name="name">使わないカード山札B</data>
+        </data>
+        <data identifier="detail_notUsingCardStackB" name="detail" />
+      </data>
+      <node identifier="cardRoot_notUsingCardStackB" name="cardRoot" />
+    </card-stack>
+
+    <terrain identifier="handCardAreaB" isLocked="true" mode="3" rotate="180" terrainNumber="220"
+      isCardAreaEnabled="true" cardAreaFunction="handArea" cardAreaTargetStackNumber="100"
+      handAreaCardState="ownerOnly" handAreaCardInterval="25" handAreaRotateAngle="180"
+      cardAspectRatio="1.5" cardArrangeOffsetX="-0" cardArrangeOffsetY="0.427899016"
+      isHandAreaClickArrangeEnabled="true" showMemo="true" memoBody="手札エリア(B)" memoWidthPx="280"
+      isHandAreaFitToTerrainEnabled="false" handAreaFitMargin="0"
+      memoHeightPx="140" memoBodyBgMode="color" memoBodyBgColor="#000000aa"
+      memoBodyBgImageIdentifier="" memoRotateFlat="false" memoAlwaysVisible="true"
+      memoTextAlign="center" memoBodyBgOpacity="0.5" memoOffsetXpx="0" memoOffsetYpx="-80"
+      memoTextColor="#ffffff" memoTextShadowColor="rgba(0,0,0,0.35)" location.name="table"
+      location.x="0" location.y="-200" posZ="0">
+      <data identifier="terrain_handCardAreaB" name="terrain">
+        <data identifier="image_handCardAreaB" name="image">
+          <data identifier="imageIdentifier_handCardAreaB" type="image" name="imageIdentifier"/>
+          <data identifier="wall_handCardAreaB" type="image" name="wall">__REPLACE__simple__</data>
+          <data identifier="floor_handCardAreaB" type="image" name="floor">__REPLACE__simple__</data>
+        </data>
+        <data identifier="common_handCardAreaB" name="common">
+          <data identifier="name_handCardAreaB" name="name">手札エリアB</data>
+          <data identifier="width_handCardAreaB" name="width">16.674</data>
+          <data identifier="height_handCardAreaB" name="height">0.1</data>
+          <data identifier="depth_handCardAreaB" name="depth">4</data>
+        </data>
+      </data>
+    </terrain>
+
+    <terrain identifier="createDeckModeButtonB" isLocked="true" mode="3" rotate="180"
+      devMenuEnabled="true" devMenuOption="1" terrainNumber="210"
+      layoutStackNumber="200" ignoreTransparencyWhenUnlocked="true"
+      layoutStartX="-151" layoutStartY="298.6150538" layoutColumnCount="13"
+      layoutColumnInterval="-125" layoutRowCount="4"
+      layoutRowInterval="-150" layoutPattern="grid"
+      layoutCardAngle="180" isShuffleOnSetup="false" layoutCardFace="ownerOnly"
+      showMemo="true" memoBody="&#10;&#10;デッキ制作" memoWidthPx="105" memoHeightPx="90"
+      memoBodyBgMode="color" memoBodyBgColor="#001275" memoBodyBgImageIdentifier=""
+      memoRotateFlat="true" memoAlwaysVisible="true" memoTextAlign="center" memoBodyBgOpacity="1"
+      memoOffsetXpx="0" memoOffsetYpx="0" memoTextColor="#ffffff" memoTextShadowColor="#000000"
+      location.name="table" location.x="-151" location.y="438.4" posZ="0">
+      <data identifier="terrain_createDeckModeButtonB" name="terrain">
+        <data identifier="common_createDeckModeButtonB" name="common">
+          <data identifier="name_createDeckModeButtonB" name="name">デッキ制作モード</data>
+          <data identifier="width_createDeckModeButtonB" name="width">2</data>
+          <data identifier="height_createDeckModeButtonB" name="height">0</data>
+          <data identifier="depth_createDeckModeButtonB" name="depth">2</data>
+        </data>
+      </data>
+    </terrain>
+    <terrain identifier="buildDeckButtonB" isLocked="true" mode="3" rotate="180"
+      devMenuEnabled="true" devMenuOption="13" terrainNumber="211"
+      moveCardsSourceTerrainNumber="222" moveCardsDestinationStackNumber="200"
+      moveCardsReturnState="faceDown" shuffleAfterMoveToStack="true"
+      showMemo="true" memoBody="&#10;&#10;デッキを組む" memoWidthPx="105" memoHeightPx="90"
+      memoBodyBgMode="color" memoBodyBgColor="#001275" memoBodyBgImageIdentifier=""
+      memoRotateFlat="true" memoAlwaysVisible="true" memoTextAlign="center" memoBodyBgOpacity="1"
+      memoOffsetXpx="0" memoOffsetYpx="0" memoTextColor="#ffffff" memoTextShadowColor="#000000"
+      location.name="table" location.x="-251" location.y="438.4" posZ="0">
+      <data identifier="terrain_buildDeckButtonB" name="terrain">
+        <data identifier="common_buildDeckButtonB" name="common">
+          <data identifier="name_buildDeckButtonB" name="name">デッキを組む</data>
+          <data identifier="width_buildDeckButtonB" name="width">2</data>
+          <data identifier="height_buildDeckButtonB" name="height">0</data>
+          <data identifier="depth_buildDeckButtonB" name="depth">2</data>
+        </data>
+      </data>
+    </terrain>
+    <terrain identifier="stackNotUsingCardsButtonB" isLocked="true" mode="3" rotate="180"
+      devMenuEnabled="true" devMenuOption="13" terrainNumber="211"
+      moveCardsSourceTerrainNumber="221" moveCardsDestinationStackNumber="201"
+      moveCardsReturnState="faceDown" shuffleAfterMoveToStack="false"
+      showMemo="true" memoBody="&#10;使わない&#10;カードを&#10;まとめる" memoWidthPx="105" memoHeightPx="90"
+      memoBodyBgMode="color" memoBodyBgColor="#001275" memoBodyBgImageIdentifier=""
+      memoRotateFlat="true" memoAlwaysVisible="true" memoTextAlign="center" memoBodyBgOpacity="1"
+      memoOffsetXpx="0" memoOffsetYpx="0" memoTextColor="#ffffff" memoTextShadowColor="#000000"
+      location.name="table" location.x="-351" location.y="438.4" posZ="0">
+      <data identifier="terrain_stackNotUsingCardsButtonB" name="terrain">
+        <data identifier="common_stackNotUsingCardsButtonB" name="common">
+          <data identifier="name_stackNotUsingCardsButtonB" name="name">使わないカードをまとめる</data>
+          <data identifier="width_stackNotUsingCardsButtonB" name="width">2</data>
+          <data identifier="height_stackNotUsingCardsButtonB" name="height">0</data>
+          <data identifier="depth_stackNotUsingCardsButtonB" name="depth">2</data>
+        </data>
+      </data>
+    </terrain>
+    <terrain identifier="stackedNotUsingCardsBackButtonB" isLocked="true" mode="3" rotate="180"
+      devMenuEnabled="true" devMenuOption="2" terrainNumber="211"
+      sourceStackNumber="201" destinationStackNumber="200"
+      confirmDialogMessage="不要なカードを山札へ戻します。よろしいですか？" enableTransferCount="false" transferCount="10"
+      moveToBottomOnTransfer="false" isShuffleAfterTransfer="false" confirmOnCardMove="true"
+      showMemo="true" memoBody="&#10;不要な&#10;カードを&#10;山札へ" memoWidthPx="105" memoHeightPx="90"
+      memoBodyBgMode="color" memoBodyBgColor="#001275" memoBodyBgImageIdentifier=""
+      memoRotateFlat="true" memoAlwaysVisible="true" memoTextAlign="center" memoBodyBgOpacity="1"
+      memoOffsetXpx="0" memoOffsetYpx="0" memoTextColor="#ffffff" memoTextShadowColor="#000000"
+      location.name="table" location.x="-451" location.y="438.4" posZ="0">
+      <data identifier="terrain_stackedNotUsingCardsBackButtonB" name="terrain">
+        <data identifier="common_stackedNotUsingCardsBackButtonB" name="common">
+          <data identifier="name_stackedNotUsingCardsBackButtonB" name="name">使わないカードを山札へ</data>
+          <data identifier="width_stackedNotUsingCardsBackButtonB" name="width">2</data>
+          <data identifier="height_stackedNotUsingCardsBackButtonB" name="height">0</data>
+          <data identifier="depth_stackedNotUsingCardsBackButtonB" name="depth">2</data>
+        </data>
+      </data>
+    </terrain>
+
+    <terrain identifier="notUsingCardAreaB" isLocked="true" mode="3" terrainNumber="221"
+      location.name="table" location.x="-1675" location.y="-160.6" rotate="180"
+      z-index="0" posZ="-1"
+      showMemo="true" memoBody="ゲームには使わないカードをここに置いてください" memoWidthPx="380"
+      memoHeightPx="140" memoBodyBgMode="color" memoBodyBgColor="#000000aa"
+      memoBodyBgImageIdentifier="" memoRotateFlat="false" memoAlwaysVisible="true"
+      memoTextAlign="center" memoBodyBgOpacity="0.5" memoOffsetXpx="0" memoOffsetYpx="-295"
+      memoTextColor="#ffffff" memoTextShadowColor="rgba(0,0,0,0.35)"
+    >
+      <data identifier="terrain_notUsingCardAreaB" name="terrain">
+        <data identifier="image_notUsingCardAreaB" name="image">
+          <data identifier="imageIdentifier_notUsingCardAreaB" type="image" name="imageIdentifier"/>
+          <data identifier="wall_notUsingCardAreaB" type="image" name="wall">__REPLACE__simple__</data>
+          <data identifier="floor_notUsingCardAreaB" type="image" name="floor">__REPLACE__simple__</data>
+        </data>
+        <data identifier="common_notUsingCardAreaB" name="common">
+          <data identifier="name_notUsingCardAreaB" name="name">ゲームに使わないカード</data>
+          <data identifier="width_notUsingCardAreaB" name="width">33</data>
+          <data identifier="height_notUsingCardAreaB" name="height">0</data>
+          <data identifier="depth_notUsingCardAreaB" name="depth">12</data>
+        </data>
+      </data>
+    </terrain>
+    <terrain identifier="usingCardAreaB" isLocked="true" mode="3" terrainNumber="222"
+      location.name="table" location.x="-1675" location.y="-310.6" rotate="180"
+      z-index="0" posZ="-1"
+      showMemo="true" memoBody="デッキとして組むカードをここに置いてください" memoWidthPx="380"
+      memoHeightPx="140" memoBodyBgMode="color" memoBodyBgColor="#000000aa"
+      memoBodyBgImageIdentifier="" memoRotateFlat="false" memoAlwaysVisible="true"
+      memoTextAlign="center" memoBodyBgOpacity="0.5" memoOffsetXpx="0" memoOffsetYpx="-70"
+      memoTextColor="#ffffff" memoTextShadowColor="rgba(0,0,0,0.35)"
+    >
+      <data identifier="terrain_usingCardAreaB" name="terrain">
+        <data identifier="image_usingCardAreaB" name="image">
+          <data identifier="imageIdentifier_usingCardAreaB" type="image" name="imageIdentifier"/>
+          <data identifier="wall_usingCardAreaB" type="image" name="wall">__REPLACE__simple__</data>
+          <data identifier="floor_usingCardAreaB" type="image" name="floor">__REPLACE__simple__</data>
+        </data>
+        <data identifier="common_usingCardAreaB" name="common">
+          <data identifier="name_usingCardAreaB" name="name">使うカード</data>
+          <data identifier="width_usingCardAreaB" name="width">33</data>
+          <data identifier="height_usingCardAreaB" name="height">0</data>
+          <data identifier="depth_usingCardAreaB" name="depth">3</data>
+        </data>
+      </data>
+    </terrain>
+
+    <text-note identifier="b2c7a077-250d-4774-a0f8-c39bb473131d" rotate="180" zindex="2"
+      password="" location.name="table" location.x="-589.4"
+      location.y="1178.8" posZ="0">
+      <data identifier="text-note_b2c7a077-250d-4774-a0f8-c39bb473131d" name="text-note">
+        <data identifier="image_b2c7a077-250d-4774-a0f8-c39bb473131d" name="image">
+          <data identifier="imageIdentifier_b2c7a077-250d-4774-a0f8-c39bb473131d" type="image"
+            name="imageIdentifier" />
+        </data>
+        <data identifier="common_b2c7a077-250d-4774-a0f8-c39bb473131d" name="common">
+          <data identifier="width_b2c7a077-250d-4774-a0f8-c39bb473131d" name="width">23.576</data>
+          <data identifier="height_b2c7a077-250d-4774-a0f8-c39bb473131d" name="height">10</data>
+          <data identifier="fontsize_b2c7a077-250d-4774-a0f8-c39bb473131d" name="fontsize">25</data>
+          <data identifier="title_b2c7a077-250d-4774-a0f8-c39bb473131d" name="title">遊び方</data>
+          <data identifier="text_b2c7a077-250d-4774-a0f8-c39bb473131d" type="note"
+            currentValue="テキストを入力してください" name="text">・デッキ制作モードボタンを押すと、現在の山札から平面上にカードが展開されます。
+・展開されたカードから、デッキに使いたいカードを下のエリアに移動してください。 ・移動後、デッキを組むボタンを押すことで山札が作成されます。
+・また、展開されたプレイに不要なカードは使わないカードをまとめるボタンでまとめることができます。
+・プレイ終了後、最初の状態に戻す場合は山札に使ったカードを戻し、不要なカードを山札へボタンを押すことで52枚のカードが山札に揃います。</data>
+        </data>
+        <data identifier="detail_b2c7a077-250d-4774-a0f8-c39bb473131d" name="detail" />
+      </data>
+    </text-note>
   </game-table>
-  
-  
-<audio-tags/><cut-in itemsJson="[]" selectedId=""/></room>
+
+
+  <audio-tags />
+  <cut-in itemsJson="[]" selectedId="" />
+</room>
