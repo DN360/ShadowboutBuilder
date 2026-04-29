@@ -74,7 +74,7 @@
         <data identifier="common_handCardAreaA" name="common">
           <data identifier="name_handCardAreaA" name="name">手札エリアA</data>
           <data identifier="width_handCardAreaA" name="width">16.674</data>
-          <data identifier="height_handCardAreaA" name="height">0.1</data>
+          <data identifier="height_handCardAreaA" name="height">0</data>
           <data identifier="depth_handCardAreaA" name="depth">4</data>
         </data>
       </data>
@@ -85,7 +85,7 @@
       layoutStartX="883.7" layoutStartY="740.4" layoutColumnCount="13" layoutColumnInterval="125"
       layoutRowCount="4"
       layoutRowInterval="150" layoutPattern="grid"
-      layoutCardAngle="0" isShuffleOnSetup="false" layoutCardFace="ownerOnly"
+      layoutCardAngle="0" isShuffleOnSetup="true" layoutCardFace="ownerOnly"
       showMemo="true" memoBody="&#10;&#10;デッキ制作" memoWidthPx="105" memoHeightPx="90"
       memoBodyBgMode="color" memoBodyBgColor="#001275" memoBodyBgImageIdentifier=""
       memoRotateFlat="true" memoAlwaysVisible="true" memoTextAlign="center" memoBodyBgOpacity="1"
@@ -283,7 +283,7 @@
         <data identifier="common_handCardAreaB" name="common">
           <data identifier="name_handCardAreaB" name="name">手札エリアB</data>
           <data identifier="width_handCardAreaB" name="width">16.674</data>
-          <data identifier="height_handCardAreaB" name="height">0.1</data>
+          <data identifier="height_handCardAreaB" name="height">0</data>
           <data identifier="depth_handCardAreaB" name="depth">4</data>
         </data>
       </data>
@@ -295,7 +295,7 @@
       layoutStartX="-151" layoutStartY="298.6150538" layoutColumnCount="13"
       layoutColumnInterval="-125" layoutRowCount="4"
       layoutRowInterval="-150" layoutPattern="grid"
-      layoutCardAngle="180" isShuffleOnSetup="false" layoutCardFace="ownerOnly"
+      layoutCardAngle="180" isShuffleOnSetup="true" layoutCardFace="ownerOnly"
       showMemo="true" memoBody="&#10;&#10;デッキ制作" memoWidthPx="105" memoHeightPx="90"
       memoBodyBgMode="color" memoBodyBgColor="#001275" memoBodyBgImageIdentifier=""
       memoRotateFlat="true" memoAlwaysVisible="true" memoTextAlign="center" memoBodyBgOpacity="1"

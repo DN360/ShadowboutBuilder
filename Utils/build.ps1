@@ -86,6 +86,6 @@ $data_xml = $data_xml.Replace("__REPLACE__${hash_name}__", $hash)
 $data_xml | Out-File ".\Shadowbout\data.xml"
 
 # ExportLock
-#New-Item -ErrorAction Ignore -Path .\Shadowbout\ExportLock
+New-Item -ErrorAction Ignore -Path .\Shadowbout\ExportLock
 
 Compress-Archive -Path .\Shadowbout\* -DestinationPath .\Shadowbout.zip
