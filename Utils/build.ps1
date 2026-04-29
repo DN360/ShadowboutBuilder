@@ -5,13 +5,13 @@ Remove-Item -ErrorAction Ignore -Force -Recurse Shadowbout
 New-Item -ErrorAction Ignore -ItemType Directory Shadowbout
 
 # まず先んじてPlaceholderからカードや背景を全部コピーしておく
-Copy-Item -Path .\Placeholder\*.webp -Destination .\Shadowbout
+Copy-Item -ErrorAction Stop -Path .\Placeholder\*.webp -Destination .\Shadowbout
 
 # 切り出したカード画像などをコピー
-Copy-Item -Path .\Card\*.webp -Destination .\Shadowbout
-Copy-Item -Path .\Background\playmat.webp -Destination .\Shadowbout
-Copy-Item -Path .\XML\roomExportFlag.xml -Destination .\Shadowbout
-Copy-Item -Path .\XML\summary.xml -Destination .\Shadowbout
+Copy-Item -ErrorAction Ignore -Path .\Card\*.webp -Destination .\Shadowbout
+Copy-Item -ErrorAction Ignore -Path .\Background\playmat.webp -Destination .\Shadowbout
+Copy-Item -ErrorAction Ignore -Path .\XML\roomExportFlag.xml -Destination .\Shadowbout
+Copy-Item -ErrorAction Ignore -Path .\XML\summary.xml -Destination .\Shadowbout
 
 $data_xml = Get-Content -Path .\XML\data.xml -Encoding UTF8
 
