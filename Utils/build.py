@@ -153,8 +153,10 @@ def build_shadowbout():
     print("✅ data.xml を保存しました。")
 
     # ExportLock の作成
-    os.makedirs(os.path.join(shadowbout_dir, "ExportLock"), exist_ok=True)
-    print("✅ ExportLock を作成しました。")
+    lock_filepath = os.path.join(shadowbout_dir, "ExportLock")
+    with open(lock_filepath, 'w') as f:
+        pass
+    print(f"✅ {lock_filepath} を作成しました。")
 
     # ZIP圧縮
     # shutil.make_archiveは、第一引数に基本名、第二引数に形式('zip')、第三引数にアーカイブするディレクトリを指定する
