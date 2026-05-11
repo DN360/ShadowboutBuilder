@@ -5,7 +5,7 @@ a = Analysis(
     ['Utils\\prepare.py'],
     pathex=[],
     binaries=[],
-    datas=[],
+    datas=[('.\\Utils\\extract_pdf_images.py', '.')],
     hiddenimports=[],
     hookspath=[],
     hooksconfig={},
