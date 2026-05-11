@@ -39,13 +39,13 @@ jobs:
           requirements: 'requirements.txt'
 
       - name: Copy CSV folders
-        run: cp -r .\CSV .\dist
+        run: cp -r ./CSV ./dist
       - name: Copy XML folders
-        run: cp -r .\XML .\dist
+        run: cp -r ./XML ./dist
       - name: Copy Placeholder folders
-        run: cp -r .\Placeholder .\dist
+        run: cp -r ./Placeholder ./dist
       - name: Copy README.md
-        run: cp -r .\README.md .\dist
+        run: cp -r ./README.md ./dist
       - name: Rename dist folder
         run: dist ShadowboutBuilder_${{ github.ref_name }}
       - name: Zip it
