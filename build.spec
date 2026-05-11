@@ -2,7 +2,7 @@
 
 
 a = Analysis(
-    ['Utils\\build.py'],
+    ['Utils/build.py'],
     pathex=[],
     binaries=[],
     datas=[],

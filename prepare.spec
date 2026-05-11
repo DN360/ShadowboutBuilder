@@ -2,10 +2,10 @@
 
 
 a = Analysis(
-    ['Utils\\prepare.py'],
+    ['Utils/prepare.py'],
     pathex=[],
     binaries=[],
-    datas=[('.\\Utils\\extract_pdf_images.py', '.')],
+    datas=[('./Utils/extract_pdf_images.py', '.')],
     hiddenimports=[],
     hookspath=[],
     hooksconfig={},
