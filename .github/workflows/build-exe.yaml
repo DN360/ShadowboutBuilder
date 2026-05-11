@@ -40,7 +40,7 @@ jobs:
           Copy-Item README_exe.md .\dist\README.md
           Rename-Item .\dist\ ShadowboutBuilder_${{ github.ref_name }}
       - name: Zip it
-        run: zip -r ShadowboutBuilder_${{ github.ref_name }}.zip ShadowboutBuilder_${{ github.ref_name }}\*
+        run: Compress-Archive -Path ShadowboutBuilder_${{ github.ref_name }} -DestinationPath ShadowboutBuilder_${{ github.ref_name }}.zip
 
       - name: Upload binaries to release
         uses: svenstaro/upload-release-action@v2
