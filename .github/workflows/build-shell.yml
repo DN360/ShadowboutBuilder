@@ -26,12 +26,12 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: ZIP
-        run: zip -r ShadowboutBuilder.zip *
+        run: zip -r ShadowboutBuilder_${{ github.ref_name }}.zip *
       - name: Upload binaries to release
         uses: svenstaro/upload-release-action@v2
         with:
             repo_token: ${{ secrets.GITHUB_TOKEN }}
-            file: ShadowboutBuilder.zip
-            asset_name: ShadowboutBuilder.zip
+            file: ShadowboutBuilder_${{ github.ref_name }}.zip
+            asset_name: ShadowboutBuilder_powershell_${{ github.ref_name }}.zip
             tag: ${{ github.ref_name }}
             overwrite: true

@@ -56,6 +56,6 @@ jobs:
         with:
             repo_token: ${{ secrets.GITHUB_TOKEN }}
             file: ShadowboutBuilder_${{ github.ref_name }}.zip
-            asset_name: ShadowboutBuilder_${{ github.ref_name }}.zip
+            asset_name: ShadowboutBuilder_exe_${{ github.ref_name }}.zip
             tag: ${{ github.ref_name }}
             overwrite: true
