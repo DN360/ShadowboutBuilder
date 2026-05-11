@@ -34,9 +34,9 @@ jobs:
       - name: Prepare zip target folder
         shell: powershell
         run: | 
-          Copy-Item -Path CSV\* .\dist\CSV -Recurse
-          Copy-Item -Path XML\* .\dist\XML -Recurse
-          Copy-Item -Path Placeholder\* .\dist\Placeholder -Recurse
+          Copy-Item -Path CSV .\dist\ -Recurse
+          Copy-Item -Path XML .\dist\ -Recurse
+          Copy-Item -Path Placeholder .\dist\ -Recurse
           Copy-Item README_exe.md .\dist\README.md
           Rename-Item .\dist\ ShadowboutBuilder_${{ github.ref_name }}
       - name: Zip it
