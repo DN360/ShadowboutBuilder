@@ -24,18 +24,11 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v4
 
-      - name: Create Build.exe
+      - name: Create Executables
         uses: sayyid5416/pyinstaller@v1
         with:
           python_ver: '3.10'
           spec: 'build.spec'
-          requirements: 'requirements.txt'
-
-      - name: Create Prepare.exe
-        uses: sayyid5416/pyinstaller@v1
-        with:
-          python_ver: '3.10'
-          spec: 'prepare.spec'
           requirements: 'requirements.txt'
 
       - name: Copy CSV folders
