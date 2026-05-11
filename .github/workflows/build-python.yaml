@@ -47,7 +47,7 @@ jobs:
       - name: Copy README.md
         run: cp -r ./README.md ./dist
       - name: Rename dist folder
-        run: dist ShadowboutBuilder_${{ github.ref_name }}
+        run: mv dist ShadowboutBuilder_${{ github.ref_name }}
       - name: Zip it
         run: zip -r ShadowboutBuilder_${{ github.ref_name }}.zip ShadowboutBuilder_${{ github.ref_name }}/*
 
